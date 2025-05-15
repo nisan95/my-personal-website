@@ -1,3 +1,39 @@
-body {
-  background: blue;
+.navbar {
+  position: fixed;
+  top:0;
+  width: 100%;
+  background-color: #333;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/*effet de survol*/
+.navbar a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/*element actif*/
+.navbar a:active {
+  background-color: #04AA6D;
+  border-radius: 5px;
 }
