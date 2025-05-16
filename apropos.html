@@ -1,24 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet" href="./style.css" />
-    <title>My Personal Website</title>
-  </head>
-  <body>
-    <div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="./index.html" class="nav-link">Accueil</a></li>
-                <li><a href="./apropos.html" class="nav-link">A propos</a></li>
-                <li><a href="./projets.html" class="nav-link">Projets</a></li>
-                <li><a href="./contact.html" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
-        <div>
-            
-            
-        </div>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>mon site personnel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">   
+  <!-- Barre de navigation -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="./index.html">Accueil</a></li>
+        <li> <a href="./apropos.html">À propos</a> </li>
+        <li><a href="./projets.html">Projets</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  <!-- Contenu de la page -->
+    <div class="about">
+      <h1>À propos</h1>
+      <h2>Étudiant en génie logiciel</h2>
+      <p>Étudiant en génie logiciel, je suis animé par une véritable passion pour le développement web et les systèmes intelligents. Ma formation m’a permis d’acquérir une solide base en algorithmique, structures de données, programmation orientée objet et architecture logicielle. À travers mes projets académiques et personnels, je me suis familiarisé avec les langages et outils les plus utilisés dans le domaine du web, notamment HTML, CSS, JavaScript, React côté front-end, ainsi que Node.js, PHP et MySQL côté back-end.</p>
     </div>
-    <script src="./script.js"></script>
-  </body>
-</html>
+    <div class="cv">
+      <div class="training">
+        <h3>Formation</h3>
+        <ul>
+          <li>Diplome en génie civil à la faculté des sciences de l’UEH</li>
+          <li>certificat en développement endroid avec codepath</li>
+          <li>certificat en génie logiciel avec Akademi</li>
+        </ul>
+      </div>
+    
+      <div class="skills">
+        <h3>Compétences</h3>
+        <ul>
+          <li>Algorithme</li>
+          <li>C</li>
+          <li>java</li>
+          <li>SQL</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>javascript</li>
+        </ul>
+      </div>
+      
+       <div class="experience">
+          <h3>Experience</h3>
+          <ul>
+            <li>Déveleppeur web front-end</li>
+            <li>integrateur d’API pour application web</li>
+            <li>concepteur d’application web full-stack</li>
+          </ul>
+      </div>
+      
+    </div>
+  </div>
+</body>

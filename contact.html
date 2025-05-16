@@ -1,23 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet" href="./style.css" />
-    <title>My Personal Website</title>
-  </head>
-  <body>
-    <div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="./index.html" class="nav-link">Accueil</a></li>
-                <li><a href="./apropos.html" class="nav-link">A propos</a></li>
-                <li><a href="./projets.html" class="nav-link">Projets</a></li>
-                <li><a href="./contact.html" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
-        <div>
-            
-        </div>
-    </div>
-    <script src="./script.js"></script>
-  </body>
-</html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>mon site personnel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">   
+  <!-- Barre de navigation -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="./index.html">Accueil</a></li>
+        <li> <a href="./apropos.html">À propos</a> </li>
+        <li><a href="./projets.html">Projets</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  <!-- Contenu de la page -->
+   <div class="contact">
+    <h1>Entrer en contact</h1>
+    <form action="mailto:sanoranigtherson95@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="nom" placeholder="votre nom" required>
+      <input type="email"  placeholder="votre email" required>
+      <textarea name="message" placeholder="votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+   </div>
+   <div class="reseaux">
+    <a href=""><img src="" alt=""></a>
+    <a href=""><img src="" alt=""></a>
+    <a href=""><img src="" alt=""></a>
+   </div>
+    
+  </div>
+</body>
