@@ -9,7 +9,9 @@
   height: 100vh;
   justify-content: start;
   gap: 10%;
+  background-color:#EAEAEA ;
 }
+/*bar de navigation*/
 .navbar {
   padding: 30px;
 }
@@ -27,23 +29,24 @@
 }
 
 .navbar a:hover {
-  background-color:#1F2937;
+  background-color:#A3A3A3;
   border-radius: 5px;
 }
 
 .navbar a:active {
-  background-color: #2563EB;
+  background-color: #1E40AF;
   border-radius: 5px;
 }
+/*index.html*/
 .content a {
-  color: white;
+  color: #EAEAEA;
   text-decoration: none;
   background-color: #2563EB;
   padding: 10px;
   border-radius: 5px;
 }
 .content a:hover{
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  background-color: #1E40AF;
 }
 .content img {
   height: 200px;
@@ -63,7 +66,7 @@
   text-align: center;
   padding: 10px;
 }
-
+/*a propos*/
 .about {
   display: flex;
   flex-direction: column;
@@ -90,11 +93,12 @@
 .about p {
   text-align: center;
 }
-
+/* projet*/
 .cartes {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .carte {
   display: flex;
@@ -102,13 +106,16 @@
   justify-content: start;
   align-items: center;
   gap: 12px;
-  border: 2px solid #2563EB ;
-  margin: 12px;
+  background-color: #1F1F1F;
+  border: 1px solid #3A3A3A;
+  color: #EAEAEA;
   padding: 12px;
+  margin: 12px;
   border-radius: 15px;
-  
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
+
 .carte p {
   text-align: center;
 }
@@ -120,6 +127,56 @@
   padding: 10px;
   border-radius: 5px;
 }
-.carte:hover,.carte a:hover {
- box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+.carte a:hover{
+  background-color: #1E40AF;
 }
+.carte:hover {
+ box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+/*contacts*/
+.contact{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.contact form textarea{
+  height: 300px;
+}
+.reseaux {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 12px;
+}
+
+input, textarea {
+      background-color: #1F1F1F;
+      border: 1px solid #3A3A3A;
+      color: #EAEAEA;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    button {
+      background-color: #2563EB;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #1E40AF;
+    }
